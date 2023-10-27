@@ -1,43 +1,13 @@
 <!DOCTYPE html>
 <html>
      <head>
-          <style>
-               canvas {
-                    border: 2px solid black;
-                    margin: 20px auto;
-                    display: block;
-                    border-radius: 12px;
-               }
-          </style>
+          <link rel="stylesheet" href="./style.css">
      </head>
      <body>
-          <canvas id="tv-screen" width="400" height="300"></canvas>
-          <script>
-               const canvas = document.getElementById('tv-screen');
-               const ctx = canvas.getContext('2d');
-               const width = canvas.width;
-               const height = canvas.height;
+          <img id="tv" src="./assets/tv.png" alt="">
+          <canvas id="tv-screen" width="450" height="340"></canvas>
+          <img id="message" src="./assets/esfahani-message.png" alt="">
 
-               // Function to draw random static on the screen
-               function drawStatic() {
-                    ctx.clearRect(0, 0, width, height);
-                    for (let i = 0; i < 400; i++) {
-                         for (let j = 0; j < 300; j++) {
-                              const color = `rgb(${Math.random() * 0}, ${Math.random() * 255}, ${Math.random() * 0})`;
-                              ctx.fillStyle = color;
-                              ctx.fillRect(i, j, 1, 1);
-                         }
-                    }
-               }
-
-               // Main animation loop
-               function animate() {
-                    drawStatic();
-                    requestAnimationFrame(animate);
-               }
-
-               // Run
-               animate();
-          </script>
+          <script src="./script.js"></script>
      </body>
 </html>

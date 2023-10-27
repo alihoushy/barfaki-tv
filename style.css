@@ -1,0 +1,19 @@
+#tv {
+     position: absolute;
+     z-index: 1;
+     width: 600px;
+     height: auto;
+     filter: blur(1px) grayscale(1);
+}
+
+canvas {
+     border: 2px solid black;
+     margin: 15px 0 0 17px;
+     display: block;
+     position: absolute;
+     z-index: 0;
+}
+
+#message {
+     margin-top: 425px;
+}
