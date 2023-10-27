@@ -6,4 +6,4 @@ A simple JS script that reminds me of the old analog televisions thrush and dial
 
 Screenshot:
 
-![alt text](./assets/demo.png)
+![alt text](./assets/demo.gif)
